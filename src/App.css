@@ -1,38 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins Light;
+}
+
 .App {
   text-align: center;
+  margin-top: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper-list {
+  width: 800px;
+  height: 80px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper-list .name-profile {
+  display: flex;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper-list .name-profile img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.wrapper-form {
+  margin-top: 40px;
+  width: 400px;
+  margin: auto;
+}
+
+.wrapper-form .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper-form .form input {
+  margin-bottom: 10px;
+  height: 36px;
+  padding-left: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper-form .form button {
+  background-color: #333;
+  height: 36px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}
+
+.wrapper-form .form button:active {
+  opacity: .5;
 }
